@@ -6,9 +6,14 @@ func printDetails(values ...Product){
 	}
 }
 
+
 func main() {
 	product := Product{
-		Name: "kayak", Category: "Watersports", Price: 279,
+		Name: "Kayak", Category: "Watersports", Price: 279,
 	}
-	printDetails(product)
+
+	customer := Customer{
+		Name: "Alice", City: "New York",
+	}
+	printDetails(product, customer)
 }
